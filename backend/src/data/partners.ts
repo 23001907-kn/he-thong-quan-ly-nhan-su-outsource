@@ -1,0 +1,33 @@
+export interface Partner {
+  maSoThue: string;
+  tenCongTy: string;
+  tenVietTat: string;
+  diaChi: string;
+  soDienThoai: string;
+  trangThai: "Đang hợp tác" | "Ngưng hợp tác" | "Chưa hợp tác";
+  nguoiTao: string;
+  thoiDiemTao: string;
+  nguoiCapNhat: string;
+  thoiDiemCapNhat: string;
+}
+
+export const partners: Partner[] = [
+  { maSoThue: "0302345678", tenCongTy: "CÔNG TY TNHH HỆ THỐNG THÔNG TIN FPT", tenVietTat: "FPT IS", diaChi: "Số 10 Phạm Văn Bạch, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37680456", trangThai: "Đang hợp tác", nguoiTao: "Trần Thị Bình", thoiDiemTao: "16/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "10:20 13/09/2026" },
+  { maSoThue: "0303456789", tenCongTy: "CÔNG TY CỔ PHẦN VNG", tenVietTat: "VNG", diaChi: "Số 182 Lê Đại Hành, Phường 15, Thành phố Hồ Chí Minh, Việt Nam", soDienThoai: "028.62991234", trangThai: "Chưa hợp tác", nguoiTao: "Lê Hoàng Long", thoiDiemTao: "18/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "14:00 14/09/2026" },
+  { maSoThue: "0304567890", tenCongTy: "CÔNG TY TNHH CÔNG NGHỆ MOBIFONE", tenVietTat: "MOBIFONE", diaChi: "Tòa nhà MobiFone, số 811A Giải Phóng, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37831234", trangThai: "Đang hợp tác", nguoiTao: "Phạm Minh Đức", thoiDiemTao: "20/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "08:45 15/09/2026" },
+  { maSoThue: "0305678901", tenCongTy: "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM", tenVietTat: "VNPT", diaChi: "Số 57 Huỳnh Thúc Kháng, Phường Láng Hạ, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37741234", trangThai: "Đang hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "22/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "11:30 16/09/2026" },
+  { maSoThue: "0306789012", tenCongTy: "CÔNG TY CỔ PHẦN CÔNG NGHỆ TIKI", tenVietTat: "TIKI", diaChi: "Tòa nhà UOA Tower, số 6 Tân Trào, Thành phố Hồ Chí Minh, Việt Nam", soDienThoai: "028.71069123", trangThai: "Ngưng hợp tác", nguoiTao: "Trần Thị Bình", thoiDiemTao: "25/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "13:20 17/09/2026" },
+  { maSoThue: "0307890123", tenCongTy: "CÔNG TY CỔ PHẦN GIẢI PHÁP THANH TOÁN VIỆT NAM", tenVietTat: "VNPAY", diaChi: "Số 22 Láng Hạ, Phường Láng Hạ, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37750123", trangThai: "Đang hợp tác", nguoiTao: "Lê Hoàng Long", thoiDiemTao: "28/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "09:10 18/09/2026" },
+  { maSoThue: "0308901234", tenCongTy: "CÔNG TY TNHH PHẦN MỀM HARVEY NASH VIỆT NAM", tenVietTat: "HARVEY NASH", diaChi: "Tòa nhà Detech, số 8 Tôn Thất Thuyết, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37957890", trangThai: "Đang hợp tác", nguoiTao: "Phạm Minh Đức", thoiDiemTao: "30/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "15:40 19/09/2026" },
+  { maSoThue: "0309012345", tenCongTy: "CÔNG TY CỔ PHẦN NAL VIỆT NAM", tenVietTat: "NAL", diaChi: "Số 60 Trường Sơn, Phường 2, Thành phố Hồ Chí Minh, Việt Nam", soDienThoai: "028.35472345", trangThai: "Chưa hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "02/02/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "10:05 20/09/2026" },
+  { maSoThue: "0310123456", tenCongTy: "CÔNG TY TNHH KMS TECHNOLOGY VIỆT NAM", tenVietTat: "KMS", diaChi: "Tòa nhà Etown, số 364 Cộng Hòa, Thành phố Hồ Chí Minh, Việt Nam", soDienThoai: "028.38122345", trangThai: "Đang hợp tác", nguoiTao: "Trần Thị Bình", thoiDiemTao: "04/02/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "16:00 21/09/2026" },
+  { maSoThue: "0311234567", tenCongTy: "CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ CMC", tenVietTat: "CMC", diaChi: "Tòa nhà CMC Tower, số 11 Duy Tân, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37956789", trangThai: "Đang hợp tác", nguoiTao: "Lê Hoàng Long", thoiDiemTao: "06/02/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "08:30 22/09/2026" },
+  { maSoThue: "0106056411", tenCongTy: "CÔNG TY CỔ PHẦN CÔNG NGHỆ VMO HOLDINGS", tenVietTat: "VMO", diaChi: "Tầng 15, tòa nhà TTC, số 19 đường Duy Tân, Thành phố Hà Nội, Việt Nam", soDienThoai: "0243310103", trangThai: "Đang hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "12/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "09:30 12/09/2026" },
+  { maSoThue: "0100109106", tenCongTy: "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI", tenVietTat: "VIETTEL", diaChi: "Lô D26 Khu đô thị mới Cầu Giấy, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.62556789", trangThai: "Đang hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "12/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "09:30 12/09/2026" },
+  { maSoThue: "0100109107", tenCongTy: "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI", tenVietTat: "VIETTEL", diaChi: "Lô D26 Khu đô thị mới Cầu Giấy, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.62556789", trangThai: "Ngưng hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "12/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "09:30 12/09/2026" },
+  { maSoThue: "0100109108", tenCongTy: "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI", tenVietTat: "VIETTEL", diaChi: "Lô D26 Khu đô thị mới Cầu Giấy, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.62556789", trangThai: "Chưa hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "12/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "09:30 12/09/2026" },
+  { maSoThue: "0100109109", tenCongTy: "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI", tenVietTat: "VIETTEL", diaChi: "Lô D26 Khu đô thị mới Cầu Giấy, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.62556789", trangThai: "Đang hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "12/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "22/09/2026 09:30" },
+  { maSoThue: "0301234567", tenCongTy: "CÔNG TY CỔ PHẦN FPT SOFTWARE", tenVietTat: "FPT", diaChi: "Tòa nhà FPT, số 17 phố Duy Tân, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37680123", trangThai: "Đang hợp tác", nguoiTao: "Trần Thị Bình", thoiDiemTao: "15/01/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "10:15 13/09/2026" },
+  { maSoThue: "0312345678", tenCongTy: "CÔNG TY TNHH LUVINA SOFTWARE", tenVietTat: "LUVINA", diaChi: "Số 82 Duy Tân, Phường Cầu Giấy, Thành phố Hà Nội, Việt Nam", soDienThoai: "024.37956123", trangThai: "Ngưng hợp tác", nguoiTao: "Phạm Minh Đức", thoiDiemTao: "08/02/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "12:45 23/09/2026" },
+  { maSoThue: "0313456789", tenCongTy: "CÔNG TY CỔ PHẦN AXON ACTIVE VIỆT NAM", tenVietTat: "AXON ACTIVE", diaChi: "Tòa nhà Waseco, số 10 Phổ Quang, Thành phố Hồ Chí Minh, Việt Nam", soDienThoai: "028.35472678", trangThai: "Đang hợp tác", nguoiTao: "Nguyễn Văn A", thoiDiemTao: "10/02/2026", nguoiCapNhat: "Lê Quang A", thoiDiemCapNhat: "14:15 24/09/2026" },
+];
