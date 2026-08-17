@@ -55,7 +55,7 @@ type FormValues = {
   trangThai: string;
 };
 
-export default function BudgetDetailPage() {
+export default function BudgetsDetail() {
   const { maNganSach } = useParams<{ maNganSach: string }>();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();

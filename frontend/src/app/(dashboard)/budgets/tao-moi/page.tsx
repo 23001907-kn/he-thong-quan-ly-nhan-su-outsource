@@ -48,7 +48,7 @@ function generateBudgetCode(loai: string, dauMoi: string): string {
   return `${loai}.${random}-${year}-${dauMoi}`;
 }
 
-export default function BudgetCreatePage() {
+export default function BudgetsCreate() {
   const navigate = useNavigate();
   const [form] = Form.useForm<FormValues>();
   const [saving, setSaving] = useState(false);
@@ -195,7 +195,13 @@ export default function BudgetCreatePage() {
             <Button onClick={() => navigate("/dashboard/ngan-sach")} disabled={saving}>
               Hủy bỏ
             </Button>
-            <Button type="primary" icon={<CheckOutlined />} htmlType="submit" loading={saving}>
+            <Button
+              type="primary"
+              icon={<CheckOutlined />}
+              htmlType="submit"
+              loading={saving}
+              style={{ background: "#22C55E", borderColor: "#22C55E" }}
+            >
               Lưu ngân sách
             </Button>
           </div>

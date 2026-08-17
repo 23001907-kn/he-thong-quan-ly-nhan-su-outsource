@@ -45,7 +45,7 @@ function formatCurrency(value: number) {
   return value.toLocaleString("vi-VN") + " đ";
 }
 
-export default function BudgetListPage() {
+export default function BudgetsPage() {
   const navigate = useNavigate();
   const [filterExpanded, setFilterExpanded] = useState(true);
   const [searchParams, setSearchParams] = useSearchParams();

@@ -8,6 +8,11 @@ import LoginPage from "./app/(auth)/Login";
 import ForgotPasswordPage from "./app/(auth)/ForgotPassword";
 import NewPasswordPage from "./app/(auth)/NewPassword";
 
+//Nhân sự
+import EmployeePage from "./app/(dashboard)/employees/page";
+import EmployeeCreate from "./app/(dashboard)/employees/tao-moi/page";
+import EmployeeDetail from "./app/(dashboard)/employees/[id]/page";
+
 // Ngân sách
 import BudgetsPage from "./app/(dashboard)/budgets/page";
 import BudgetsCreate from "./app/(dashboard)/budgets/tao-moi/page";
@@ -36,6 +41,10 @@ export default function App() {
         {/* Dashboard - có sidebar, bọc trong MainLayout */}
         <Route path="/dashboard" element={<MainLayout />}>
           <Route index element={<DashboardPage />} />
+
+          <Route path="nhan-su" element={<EmployeePage/>}/>
+          <Route path="nhan-su/tao-moi" element={<EmployeeCreate/>}/>
+          <Route path="nhan-su/:cccd" element={<EmployeeDetail/>}/>
 
           <Route path="ngan-sach" element={<BudgetsPage />} />
           <Route path="ngan-sach/tao-moi" element={<BudgetsCreate />} />

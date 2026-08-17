@@ -4,6 +4,7 @@ import {
   DollarOutlined,
   TeamOutlined,
   ShoppingCartOutlined,
+  ContactsOutlined,
 } from "@ant-design/icons";
 
 const menuGroups = [
@@ -14,6 +15,7 @@ const menuGroups = [
   {
     title: "HỢP ĐỒNG & TÀI CHÍNH",
     items: [
+      { key: "/dashboard/nhan-su", label: "Nhân sự OutSource", icon: <ContactsOutlined />},
       { key: "/dashboard/ngan-sach", label: "Quản lý ngân sách", icon: <DollarOutlined /> },
       { key: "/dashboard/doi-tac", label: "Quản lý đối tác", icon: <TeamOutlined /> },
       { key: "/dashboard/don-dat-hang", label: "Đơn đặt hàng", icon: <ShoppingCartOutlined /> },
